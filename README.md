@@ -1,6 +1,6 @@
 # Happy or Sad
 
-Implementation of the Happy or Sad App for Technology Will Save Use using React, Redux and Express.
+Implementation of the Happy or Sad App using React, Redux and Express.
 
 As suggested, Dan Abramov's [`react-hot-boilerplate` v2](https://github.com/gaearon/react-hot-boilerplate) is used as a starting point (includes webpack config and a dev express server).
 

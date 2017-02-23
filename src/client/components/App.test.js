@@ -70,7 +70,7 @@ test('App#handleKeyDown should return null if the keys pressed isn\'t SHIFT + EN
   t.is(app.handleKeyDown(mockEvent), null);
 });
 
-test('App#handleKeyDown should call if the keys pressed isn\'t SHIFT + ENTER', (t) => {
+test('App#handleKeyDown should call App#submitForm if the keys pressed is SHIFT + ENTER', (t) => {
   const mockEvent = {
     keyCode: 13,
     metaKey: true
