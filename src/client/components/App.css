@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#root {
+  text-align: center;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100%;
+}
+
+.App {
+  background-color: mediumpurple;
+  padding-top: 45px;
+  width: 100%;
+  height: 100%;
+  font-size: 1.5rem;
+}
+.App form {
+  height: 100%;
+  width: 100%;
+}
+
+.App.sad {
+  background-color: #292C85;
+}
+.App.happy {
+  background-color: #FF7D40;
+}
+
+.App h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.1;
+}
+
+.App .text-input {
+  max-height: 400px;
+  max-width: 300px;
+  border: none;
+  resize: none;
+  padding: .5rem 1rem;
+  width: 70%;
+  height: 60%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.App .submit-button {
+  border: solid 2px #fff;
+  background: transparent;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: inherit;
+}
+
+.App .submit-button:active,
+.App .submit-button:focus,
+.App .text-input:active,
+.App .text-input:focus {
+  outline: none;
+}
+.App .submit-button:hover {
+  background-color: white;
+}
+.App.unknown .submit-button:hover {
+  color: mediumpurple;
+}
+.App.sad .submit-button:hover {
+  color: #292C85;
+}
+.App.happy .submit-button:hover {
+  color: #FF7D40;
+}
+
+.status-overlay {
+  background-color: rgba(100, 100, 100, .8);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.status-overlay-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
