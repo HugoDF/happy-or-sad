@@ -41,7 +41,7 @@ export class App extends React.Component {
         <h1>Happy or Sad?<br/>{mood}</h1>
         <form onSubmit={this.handleSubmit.bind(this)}>
           <textarea
-            placeholder="Put some text here to see if it's happy or sad"
+            placeholder="Add some text here to see if it's happy or sad"
             onKeyDown={this.handleKeyDown.bind(this)}
             onChange={this.handleTextChange.bind(this)}
             className="text-input"
